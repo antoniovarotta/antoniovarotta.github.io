@@ -5,48 +5,97 @@
     <title>Form spedizione</title>
 </head>
 <body>
-<form id="delivery" autocomplete="on">
-    <label for="name">Nome</label>
-    <input id="name" type="text" name="name" placeholder="Nome" required>
+<table>
+    <form id="delivery" autocomplete="on">
 
-    <label for="lastname">Cognome</label>
-    <input id="lastname" type="text" name="lastname" placeholder="Cognome" required>
+        <tr>
+            <td>
+                <label for="name">Nome</label>
+                <input id="name" type="text" name="name" placeholder="Nome" required>
+            </td>
+        </tr>
 
-    <label for="address">Indirizzo</label>
-    <input type="text" name="address" id="address" placeholder="Via.." required>
+        <tr>
+            <td>
+                <label for="lastname">Cognome</label>
+                <input id="lastname" type="text" name="lastname" placeholder="Cognome" required>
+            </td>
+        </tr>
 
-    <label for="nu">Civico</label>
-    <input type="number" name="nu" id="nu" placeholder="1,2,3..">
+        <tr>
+            <td>
+                <label for="address">Indirizzo</label>
+                <input type="text" name="address" id="address" placeholder="Via.." required>
+            </td>
+        </tr>
 
-    <label for="cap">Cap</label>
-    <input type="number" name="cap" id="cap" required>
+        <tr>
+            <td>
+                <label for="nu">Civico</label>
+                <input type="number" name="nu" id="nu" placeholder="1,2,3..">
+            </td>
+        </tr>
 
-    <label for="city">Città</label>
-    <input type="text" name="city" id="city">
+        <tr>
+            <td>
+                <label for="cap">Cap</label>
+                <input type="number" name="cap" id="cap" required>
+            </td>
+        </tr>
 
-    <label for="province">Provincia</label>
-    <select name="province" id="province">
-        <option value="Me">Messina</option>
-        <option value="Pa">Palermo</option>
-        <option value="Ct">Catania</option>
-        <option value="other" selected>Altro</option>
-    </select>
+        <tr>
+            <td>
+                <label for="city">Città</label>
+                <input type="text" name="city" id="city">
+            </td>
+        </tr>
 
-    <label for="country">Nazione</label>
-    <input type="text" name="country" id="country" required>
+        <tr>
+            <td>
+                <label for="province">Provincia</label>
+                <select name="province" id="province">
+                    <option value="Me">Messina</option>
+                    <option value="Pa">Palermo</option>
+                    <option value="Ct">Catania</option>
+                    <option value="other" selected>Altro</option>
+                </select>
+            </td>
+        </tr>
 
-    <label for="phone">Telefono</label>
-    <input type="tel" name="phone" id="phone">
+        <tr>
+            <td>
+                <label for="country">Nazione</label>
+                <input type="text" name="country" id="country" required>
+            </td>
+        </tr>
 
-    <label for="mail">E-Mail</label>
-    <input type="email" name="mail" id="mail" required>
+        <tr>
+            <td>
+                <label for="phone">Telefono</label>
+                <input type="tel" name="phone" id="phone">
+            </td>
+        </tr>
 
-    <label for="note">Note</label>
-    <textarea name="note" id="note" cols="30" rows="10"></textarea>
+        <tr>
+            <td>
+                <label for="mail">E-Mail</label>
+                <input type="email" name="mail" id="mail" required>
+            </td>
+        </tr>
 
-    <input type="button" value="Invia">
+        <tr>
+            <td>
+                <label for="note">Note</label>
+                <textarea name="note" id="note" cols="30" rows="10"></textarea>
 
-</form>
+                <input type="button" value="Invia">
+            </td>
+        </tr>
+
+
+    </form>
+
+</table>
 
 <button type="reset" form="delivery">Reset</button>
 
