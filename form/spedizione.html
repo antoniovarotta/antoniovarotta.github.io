@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Form spedizione</title>
+</head>
+<body>
+<form id="delivery">
+    <label for="name">Nome</label>
+    <input id="name" type="text" name="name" placeholder="Nome" required>
+
+    <label for="lastname">Cognome</label>
+    <input id="lastname" type="text" name="lastname" placeholder="Cognome" required>
+
+    <label for="address">Indirizzo</label>
+    <input type="text" name="address" id="address" placeholder="Via.." required>
+
+    <label for="nu">Civico</label>
+    <input type="number" name="nu" id="nu" placeholder="1,2,3..">
+
+    <label for="cap">Cap</label>
+    <input type="number" name="cap" id="cap" required>
+
+    <label for="city">Città</label>
+    <input type="text" name="city" id="city">
+
+    <label for="province">Provincia</label>
+    <select name="province" id="province">
+        <option value="Me">Messina</option>
+        <option value="Pa">Palermo</option>
+        <option value="Ct">Catania</option>
+        <option value="other" selected>Altro</option>
+    </select>
+
+    <label for="country">Nazione</label>
+    <input type="text" name="country" id="country" required>
+
+    <label for="phone">Telefono</label>
+    <input type="tel" name="phone" id="phone">
+
+    <label for="mail">E-Mail</label>
+    <input type="email" name="mail" id="mail" required>
+
+    <label for="note">Note</label>
+    <textarea name="note" id="note" cols="30" rows="10"></textarea>
+
+    <input type="button" value="Invia">
+
+</form>
+
+<button type="reset" form="delivery">Reset</button>
+
+</body>
+</html>
